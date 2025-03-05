@@ -1,0 +1,916 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../model/">
+      
+      
+        <link rel="next" href="../tutorial-additional/">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>「完全版」 - ProtoSim - 教員用マニュアル</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8679316902"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8679316902",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8679316902",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ProtoSim - 教員用マニュアル" class="md-header__button md-logo" aria-label="ProtoSim - 教員用マニュアル" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ProtoSim - 教員用マニュアル
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              「完全版」
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ProtoSim - 教員用マニュアル" class="md-nav__button md-logo" aria-label="ProtoSim - 教員用マニュアル" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ProtoSim - 教員用マニュアル
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    バージョン 2（推奨）
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            バージョン 2（推奨）
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProtoSim（バージョン 2）とは
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    授業モデル
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    「完全版」
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    「完全版」
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      【はじめに】演習の狙い
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web ページ閲覧の流れ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      フタを開ける
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      シミュレータの見方
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      アプリケーション層 ①
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      アプリケーション層 ②
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      トランスポート層 ①
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      トランスポート層 ②
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      インターネット層 ①
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      インターネット層 ②
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ネットワークインタフェース層 ①
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ネットワークインタフェース層 ②
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial-additional/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    「完全版 <追加ミッション>」
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    バージョン 1（旧版）
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            バージョン 1（旧版）
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    教材の構成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial-basic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基礎編
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorial-advanced/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    発展編
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../external-materials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    外部資料集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms-of-service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    利用規約
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      【はじめに】演習の狙い
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web ページ閲覧の流れ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      フタを開ける
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      シミュレータの見方
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      アプリケーション層 ①
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      アプリケーション層 ②
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      トランスポート層 ①
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      トランスポート層 ②
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      インターネット層 ①
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      インターネット層 ②
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ネットワークインタフェース層 ①
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ネットワークインタフェース層 ②
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">「完全版」各ページの解説</h1>
+<p>このページでは、学校の先生方を対象として<strong>「完全版」</strong>各ページを授業で扱う際のポイントなどについて説明します。</p>
+<h2 id="_2">【はじめに】演習の狙い</h2>
+<p>このページは、自学自習にも対応するために、ProtoSim の使い方の一例を紹介しています。オンデマンドビデオの視聴など、適宜実際の授業内容に応じて追加の指示を行ってください。</p>
+<p>また、ProtoSim には専門用語にマウスカーソルを重ねると説明が表示される機能など、自律的に学習を進めることを支援する機能が備わっています。それらを演示するなどし、各自でミッションに取り組む際に使えるようにしておくと後で役立ちます。</p>
+<h2 id="web">Web ページ閲覧の流れ</h2>
+<p>ProtoSim では、Web ページ閲覧という身近な場面を扱っています。このページでは、まずフタを閉じた初期状態で URL を入力し、Web ページが表示される様子を見てみることで、学習者の既存の経験と結び付けて自分事として捉えてもらうことを狙いとしています。</p>
+<h2 id="_3">フタを開ける</h2>
+<p>前のページでは、ProtoSim が身近な場面を扱っているという前振りをしました。今度はフタを開けてみると、学習者にとって見慣れない表示がなされます。よく使っているネットワークも、実は中の仕組みをよく知らないことに気づいてもらい、学習の動機づけを行います。</p>
+<h2 id="_4">シミュレータの見方</h2>
+<p>このページでは、シミュレータの見方を紹介しています。各教科書に記載されている図と ProtoSim の可視化とでは、リクエストとレスポンスが両方載っているなど少し違う箇所がありますので、そのギャップを埋めることがこのページの目的です。</p>
+<p>また、データが流れる順番にアイコンをクリックしていって、「上の層のデータが箱の中に入れられている」「最終的には 0 と 1 のデータになっている」「それが相手側では逆の順番で元に戻されている」といった説明を口頭で補い、最初に全体像を把握できるようにすることも考えられます。</p>
+<p>ここまでの URL 入力やアイコンクリックは繰り返し行う前提操作になりますので、すべての学習者が確実に自分で操作するようにしてください。</p>
+<h2 id="1">アプリケーション層 ①</h2>
+<p>このページでは、Web ページ閲覧時に通信相手が存在していることを理解します。Web ページのデータはどこからともなく現れるのではなく、Web サーバに保存されていて、それが転送されてくるのです。</p>
+<ul>
+<li>まず、レスポンスのアイコンをクリックして中身を確認し、HTML ファイルが含まれていることを確認します。</li>
+<li>次に、Web サーバを操作し、その HTML ファイルがもともとは Web サーバに保存されていたことを確認します。</li>
+<li>具体的には、<code>info1</code> という名前のフォルダに <code>internet.html</code> という名前のファイルとして保存されていたことを確認します。</li>
+</ul>
+<h2 id="2">アプリケーション層 ②</h2>
+<p>このページでは、URL の構造、特にパスの部分について理解します。</p>
+<ul>
+<li>まず、Web サーバを操作し、<code>info1</code> という名前のフォルダに <code>tags.html</code> という名前のファイルも存在していることを確認します。</li>
+<li>次に、スマートフォンの Web ブラウザから操作を行って、このファイルにアクセスします。この際、前のページでアクセスした <code>http://example.jp/info1/internet.html</code> という URL をよく見ると、フォルダ名やファイル名が URL に含まれていることに気づきます。そのため、その部分を書き換えて <code>http://example.jp/info1/tags.html</code> という URL にアクセスすれば良いと考えられます。</li>
+</ul>
+<p>このように、URL の構造もきちんとルールが決まっており、そのおかげで欲しいファイルがどれなのか Web ページに伝わり、正しく通信が行われることがわかりました。</p>
+<p>なお、Apache などではデフォルトでパスを用いてフォルダ名やファイル名を指定しますが、他の Web アプリケーションではパスは必ずしもフォルダ名やファイル名を示すとは限りません。パスの部分を読んで処理の条件分岐を行うような Web アプリケーションも実現可能です。</p>
+<h2 id="1_1">トランスポート層 ①</h2>
+<p>このページでは、データをパケットに分割して通信を行っていることを理解します。</p>
+<ul>
+<li>これまで何度かアイコンが流れるアニメーションを見てきましたが、レスポンスではアイコンが複数個に分かれていました。</li>
+<li>レスポンスのアイコンをクリックしてその内容を実際に見てみます。スクロールすると、3 個の箱が表示されていることがわかります。また、ヘッダにもパケット数が 3 であることが明記されています。</li>
+<li>さらにヘッダを見ると、ボディの長さが 100, 100, 93 となっていることがわかります。つまり、ボディを 100 文字ごとに区切るように処理が行われていて、93 はあまりです。</li>
+<li>パケットの分割は手作業でも体験できます。</li>
+</ul>
+<p>なお、最後のミッションの正答は次の通りです。</p>
+<p><img alt="最後のミッションの正答" src="/images/v2/tcpSeparation.png" width="320px" /></p>
+<h2 id="2_1">トランスポート層 ②</h2>
+<p>このページでは、パケットロスが発生してもなるべく確実にデータを相手に届けられるよう再送制御が行われていることを理解します。</p>
+<ul>
+<li>まず、ProtoSim でもパケットロスの設定を有効化できます。</li>
+<li>この状態で再度 URL を入力すると、パケットの 1 個が途中で消失してしまい、Web ページが表示できなくなったことが確認できます。</li>
+<li>これまでは UDP を使用していましたが、再送制御を行う TCP に切り替えます。</li>
+<li>この状態で改めて URL を入力すると、パケットロスが発生するのはそのままですが、後から消失したパケットを再送したことで、無事に Web ページが表示されました。</li>
+</ul>
+<p>なお、本来は再送制御を行うために ACK と呼ばれるデータがやり取りされていますが、ProtoSim のシミュレータ内では表示を省略しています。</p>
+<p>このように、パケットへの分割や再送制御など、データを確実に届けるための仕組みが働いていることがわかりました。パケットへ分割することの利点として、回線を占有しないことのほかに、再送を効率的に行えることも挙げられます。大きなデータを送信中に少しでもデータが壊れてしまうと、そのすべてを一から送りなおす必要があります。予めパケットに分割しておけば、壊れたパケットだけを再送するだけで済みます。</p>
+<h2 id="1_2">インターネット層 ①</h2>
+<p>このページでは、インターネットにおける住所のようなものとして、IP アドレスが使用されていることを学びます。</p>
+<ul>
+<li>ProtoSim で IP のデータを表示することで、ヘッダーに送信元と受信先の IP アドレスが記載されていることが確認できます。リクエストかレスポンスかによって、送信元と受信先が、スマートフォンか Web サーバかが変わることに注意が必要です。スマートフォンの IP アドレスは <code>198.51.100.1</code> で、Web サーバの IP アドレスは <code>203.0.113.7</code> です。</li>
+<li><code>xxx.xxx.xxx.xxx</code> という形式の IP アドレスは普段あまり見慣れませんが、それは代わりにドメイン名を使用しているからです。ドメイン名の代わりに IP アドレスを使用した <code>http://203.0.113.7/info1/internet.html</code> という URL でも、同様に通信できることが確認できました。</li>
+</ul>
+<h2 id="2_2">インターネット層 ②</h2>
+<p>このページでは、ルーティングテーブルを用いて通信経路が決められていることを理解します。</p>
+<ul>
+<li>ProtoSim ではこれまで通信経路上のルーターの表示を省略していましたが、波線をクリックすることで表示可能です。</li>
+<li>この状態で改めて URL を入力すると、ルーターに沿ってアイコンが流れることが確認できます。</li>
+<li>次に、ルーティングテーブルの見方を確認します。ルーターにカーソルを重ねるとルーティングテーブルが表示され、自身の IP アドレスに加え、宛先と転送先の表が載っていることがわかります。ルーティングテーブルによれば、<code>192.0.2.4</code> のルーターが <code>198.51.100.1</code> 宛てのデータを受け取ったとき、次は <code>198.51.100.2</code> のルーターに送り出します。</li>
+<li>また、アイコンが流れるアニメーションを見ると、実はレスポンスが通る経路が最短経路ではなかったことに気づきます。これを直すには、遠回りの方へ送り出しているルーターのルーティングテーブルを修正すれば良いです。つまり、IP アドレスが <code>203.0.113.6</code> のルーターのルーティングテーブルについて、宛先が <code>198.51.100.1</code> のデータを受け取ったときの転送先を <code>192.0.2.4</code> にすれば、行きも帰りも最短経路を通るようになります。</li>
+</ul>
+<p>このように、IP アドレスという住所のようなものを使ったルーティングテーブルを参照し、宛先に応じて次にどちらへ転送すれば良いかを判断していることがわかりました。</p>
+<h2 id="1_3">ネットワークインタフェース層 ①</h2>
+<p>このページでは、電波やケーブルなど物理的な方法を用いて 0 と 1 の列を表現できることを理解します。</p>
+<ul>
+<li>ProtoSim ではスマートフォンで Wi-Fi（電波）、Web サーバでイーサネット（ケーブル）を使用しています。アイコンをクリックしてデータの中身を見てみると、電波では 0 を表す M の形と 1 を表す W の形を用いて、ケーブルでは 0 を表す低い電圧の状態と 1 を表す高い電圧の状態を用いて、通信を行っていることが確認できます。</li>
+</ul>
+<p>なお、Wi-Fi についてここではわかりやすく M の形・W の形と呼んでいますが、正確には位相の違いを用いています。また、実際にはより細かく位相を使い分けたり、振幅も使い分けたりして、1 つの波でもっと多くの情報量を伝えるような工夫が取り入れられています。</p>
+<h2 id="2_3">ネットワークインタフェース層 ②</h2>
+<p>このページでは、ノイズへの対策としてパリティチェックなどの誤り検出が用いられていることを理解します。</p>
+<ul>
+<li>ProtoSim のネットワークインタフェース層では、途中からデータを流し込むことができます。（こうしたユニットテストのようなことができるのも、通信プロトコルが階層化されて整理されている利点の 1 つです。）</li>
+<li>UTF-8 では <code>a</code> の文字コードが <code>01100001</code> であると決められているのに対し、実際に流れたデータは <code>011000011</code> であり、末尾に 1 ビット分のパリティビットが増えていることが確認できます。</li>
+<li>偶数パリティに基づいてパリティビットを <code>c</code> の文字コードに付与すると、<code>011000110</code> になります。</li>
+<li>偶数パリティに基づいてパリティビットを <code>d</code> の文字コードに付与すると、<code>011001001</code> になります。</li>
+<li><code>x</code> の文字コードを調べるために、シミュレータで <code>x</code> を流し込みます。ただし、ここで流れたデータにはパリティビットが付与されているため、それを取り除いた <code>01111000</code> が <code>x</code> の文字コードであるとわかります。</li>
+</ul>
+<p>このように、0 と 1 の列を相手に伝えるために物理的な方法を用いていますが、その性質上ノイズが発生することもあるため、誤り検出を行っていることがわかりました。</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
