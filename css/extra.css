@@ -11,3 +11,7 @@
 .md-typeset p {
     line-height: 180%;
 }
+
+.md-typeset blockquote {
+    color: inherit;
+}
